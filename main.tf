@@ -25,4 +25,6 @@ resource "azurerm_app_service" "this" {
     type  = var.connection_string.type
     value = var.connection_string.value
   }
+
+  tags = var.tags
 }

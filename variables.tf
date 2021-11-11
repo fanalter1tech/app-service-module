@@ -37,6 +37,8 @@ variable "connection_string" {
 }
 
 variable "tags" {
-  type    = string
-  default = ""
+  type = map(string)
+  default = {
+    Environment = ""
+  }
 }
